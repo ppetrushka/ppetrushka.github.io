@@ -7,24 +7,59 @@
         <title>(Musical) Works</title>
         <style>
             body {
-                background: black;
-                color: lightsteelblue;
-            }    
-        </style>
+                
+                background: #83a4d4;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                font-family: avenir;
+                font-weight: 800;
+                color:#452c63;
+            }
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            } 
     
-    </head>	
-
-    <nav>
-        <a href="./index.html">Home</a>
-        
-        <a href="./bio.html">Bio</a>
-        
-        <a href="./musical_works.html">(Musical) Works</a>
-
-        <a href="./things_i_like.html">Things I Like</a>
-    </nav> 
-
+        </style>
+    </head>
+ 
     <body>
+
+        <div class="topnav">
+
+            <h3 style="font-family: inherit; font-weight: 100; color: inherit; ">
+
+                <a href="./index.html">Home</a>
+
+                <a href="./bio.html">Bio</a>
+
+                <a href="./musical_works.html">(Musical) Works</a>
+
+                <a href="./things_i_like.html">Things I Like</a>
+            
+            </h3>
+            
+        </div>
 
 
         <header><!-- here comes the title of the page--><h1></h1></header>
@@ -34,12 +69,12 @@
             <article>
 
                 
-                <h2><b>(Musical) Works:</b></h2>
+                <h2 style="font-family: inherit; font-weight: inherit; color: inherit;">(Musical) Works:</h2>
 
                 <section>
                 
                     <p>
-                        <h3>Sibelius Piss Party, or Decadence In The Internet Age</h3> 
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Sibelius Piss Party, or Decadence In The Internet Age</h3> 
                     </p>
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/KhAY-fOJGyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -50,7 +85,7 @@
                 <section>
                 
                     <p>
-                        <h3>White Heat</h3> 
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">White Heat</h3> 
                     </p>
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/L78QsB83ImY?start=6301" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -64,7 +99,7 @@
                 <section>
                 
                     <p>
-                        <h3>Improv #6 (Leo Fender Dreams Of A Purple Seagull)</h3> 
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Improv #6 (Leo Fender Dreams Of A Purple Seagull)</h3> 
                     </p>
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/m1ZZLLVBA98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -74,7 +109,7 @@
                 <section>
                 
                     <p>
-                        <h3>Weekly Improvisation (w/Pure Data and Max/MSP/Jitter Live Visuals) 18.12.2022)</h3> 
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Weekly Improvisation (w/Pure Data and Max/MSP/Jitter Live Visuals) 18.12.2022)</h3> 
                     </p>
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8Mb0kgsusXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -106,4 +141,4 @@
     </body>
 
 
-</html>        
+</html>       
