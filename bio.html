@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bio</title>
-        <style>
+        <style type="text/css">
             body {
                 
                 background: #EECDA3;  /* fallback for old browsers */
@@ -38,9 +38,45 @@
             .topnav a.active {
               background-color: #04AA6D;
               color: white;
-            } 
-    
+            }
+
+           div.clickEffect{
+                position:fixed;
+                box-sizing:border-box;
+                border-style:solid;
+                border-color:#000000;
+                border-radius:50%;
+                animation:clickEffect 0.4s ease-out;
+                z-index:99999;
+            }
+            @keyframes clickEffect{
+                0%{
+                    opacity:1;
+                    width:0.5em; height:0.5em;
+                    margin:-0.25em;
+                    border-width:0.5rem;
+                }
+                100%{
+                    opacity:0.2;
+                    width:15em; height:15em;
+                    margin:-7.5em;
+                    border-width:0.03rem;
+                }
+            }
+               
         </style>
+
+        <script type="text/javascript">
+        function clickEffect(e){
+            var d=document.createElement("div");
+            d.className="clickEffect";
+            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+            document.body.appendChild(d);
+            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+        }
+        document.addEventListener('click',clickEffect);
+        </script> 
+
     </head>
  
     <body>
@@ -56,6 +92,12 @@
                 <a href="./musical_works.html">(Musical) Works</a>
 
                 <a href="./things_i_like.html">Things I Like</a>
+
+                <a href="./art.html">Art</a>
+
+                <a href="./max_pd.html">Max/Pd/Py</a>
+
+                <a href="./contact.html">Contact</a>
             
             </h3>
             
@@ -112,4 +154,4 @@
     </body>
 
 
-</html>   
+</html>        
