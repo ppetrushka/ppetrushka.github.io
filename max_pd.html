@@ -4,7 +4,7 @@
     	
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bio</title>
+        <title>Max/Pd/Py Files</title>
         <style type="text/css">
             body {
 
@@ -16,6 +16,8 @@
                 font-weight: 800;
                 color:#452c63;
             }
+
+
             .topnav {
               overflow: hidden;
               background-color: #333;
@@ -104,18 +106,73 @@
             
         </div>
 
+        <header>
+
+            <h2 style="font-family: inherit; font-weight: 800; color: inherit; ">
+
+            Python Scripts:
+            
+            </h2> 
+
+        </header>
+
         <section>
 
-        <br><br><br><br><br><br>
+            <div> <h3 style="font-family: inherit; font-weight: 400; color: black; "></h3> Real-Time World Population as PD parameter</div>
 
-            <center>
+            <ul>
+                <li><a href="./code/current_world_population.py" download> <h3 style="font-family: inherit; font-weight: 100; color: black; ">"current world population python 3 script"</h3> </a>
+                </li>
+
+                <li><a href="./code/current_world_population_socket.py" download> <h3 style="font-family: inherit; font-weight: 100; color: black; ">"current world population python 3 script (w/ Pure Data socket)"</h3> </a>
+                </li>
                 
-                <h2 style="font-family: inherit; font-weight: 800; color: black; ">
+            </ul>
 
-                    In Progress!
+            <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                <strong>Description:</strong>
+            </h5>
+            
+            <p>
+                <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                This python script gets real time population data from worldometers.com. The first version simply prints it, where as the second version "socket" feeds it directly into pure data (or any other program for that matter). In order to run it, enable "remote automation" from your web browser settings and make sure PD is open if you're using it. Then simply open the terminal, go to the directory where the script is located and run it (>$ python3 filename.py). Make sure you're connected to the internet and have python 3 installed. If you're using PD, make sure you add a netreceive object with the argument "3000". 
+                </h5>
+            </p>             
+ 
+        </section>
 
-                </h2>
+        <hr width= "100%" color= "black" noshade="" size= "8px">
+
+       <header>
+
+            <h2 style="font-family: inherit; font-weight: 800; color: inherit; ">
+
+            Max/MSP/Jitter Patches:
+            
+            </h2> 
+
+        <section>
+
+            <div> <h3 style="font-family: inherit; font-weight: 400; color: black; "></h3> Max Sampler / Sample Slicer</div>
+
+            <!--<ul>
+                <li><a href="./code/current_world_population.py" download> <h3 style="font-family: inherit; font-weight: 100; color: black; ">"current world population python 3 script"</h3> </a>
+                </li>
+
+                <li><a href="./code/current_world_population_socket.py" download> <h3 style="font-family: inherit; font-weight: 100; color: black; ">"current world population python 3 script (w/ Pure Data socket)"</h3> </a>
+                </li>
                 
-            </center>
+            </ul>
+            -->
 
+            <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                <strong>Description:</strong>
+            </h5>
+            
+            <p>
+                <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                In the works...
+                </h5>
+            </p>             
+ 
         </section>
