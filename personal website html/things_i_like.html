@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wisdom of The Plant</title>
+        <style type="text/css">
+            body {
+                
+                background: #EDE574;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                font-family: avenir;
+                font-weight: 800;
+                color:#452c63;
+            }
+
+            iframe {
+            width: 100%;
+            }
+
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            } 
+           div.clickEffect{
+                position:fixed;
+                box-sizing:border-box;
+                border-style:solid;
+                border-color:#000000;
+                border-radius:50%;
+                animation:clickEffect 0.4s ease-out;
+                z-index:99999;
+            }
+            @keyframes clickEffect{
+                0%{
+                    opacity:1;
+                    width:0.5em; height:0.5em;
+                    margin:-0.25em;
+                    border-width:0.5rem;
+                }
+                100%{
+                    opacity:0.2;
+                    width:15em; height:15em;
+                    margin:-7.5em;
+                    border-width:0.03rem;
+                }
+            }
+               
+        </style>
+
+        <script type="text/javascript">
+        function clickEffect(e){
+            var d=document.createElement("div");
+            d.className="clickEffect";
+            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+            document.body.appendChild(d);
+            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+        }
+        document.addEventListener('click',clickEffect);
+        </script>
+    </head>
+ 
+    <body>
+
+        <div class="topnav">
+
+            <h3 style="font-family: inherit; font-weight: 100; color: inherit; ">
+
+                <a href="./index.html">Home</a>
+
+                <a href="./bio.html">Bio</a>
+
+                <a href="./musical_works.html">(Musical) Works</a>
+
+                <a href="./things_i_like.html">Things I Like</a>
+
+                <a href="./art.html">Art</a>
+
+                <a href="./max_pd.html">Max/Pd/Py</a>
+
+                <a href="./contact.html">Contact</a>
+            
+            </h3>
+            
+        </div>
+        
+        <section>
+            
+            <header>
+                <h1 style="font-family: inherit; font-weight: inherit; color: inherit; ">Things I Like - April 2023</h1>
+            </header>
+        
+        </section>
+
+        <br>
+
+        <header>
+            <h3 style="font-family: inherit; font-weight: 400; color: black; ">"Cassette County" - David Berman (from "Actual Air")</h2>
+        </header>
+
+        <br>
+
+        <section>
+            
+            <iframe width='600' height='400' src='https://poets.org/poem/cassette-county?mbd=1' frameborder='0' scrolling='yes' allowfullscreen></iframe>    
+        
+        </section>
+
+        <br>
+        
+        <header>
+            <h3 style="font-family: inherit; font-weight: 400; color: black; ">The Flaming Lips - "Yoshimi Battles The Pink Robots"</h2>
+        </header>
+
+        <br>
+
+        <section>
+
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/49LA20VMk65fQyEaIzYdvf?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        </section>
+
+    </body>

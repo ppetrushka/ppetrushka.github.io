@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>(Musical) Works</title>
+        <style type="text/css">
+            body {
+                
+                background: #83a4d4;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                font-family: avenir;
+                font-weight: 800;
+                color:#452c63;
+            }
+
+            .videos, .videos iframe {
+            width: 100%;
+            }
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            }
+
+           div.clickEffect{
+                position:fixed;
+                box-sizing:border-box;
+                border-style:solid;
+                border-color:#000000;
+                border-radius:50%;
+                animation:clickEffect 0.4s ease-out;
+                z-index:99999;
+            }
+            @keyframes clickEffect{
+                0%{
+                    opacity:1;
+                    width:0.5em; height:0.5em;
+                    margin:-0.25em;
+                    border-width:0.5rem;
+                }
+                100%{
+                    opacity:0.2;
+                    width:15em; height:15em;
+                    margin:-7.5em;
+                    border-width:0.03rem;
+                }
+            }
+               
+        </style>
+
+        <script type="text/javascript">
+        function clickEffect(e){
+            var d=document.createElement("div");
+            d.className="clickEffect";
+            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+            document.body.appendChild(d);
+            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+        }
+        document.addEventListener('click',clickEffect);
+        </script> 
+        
+    </head>
+ 
+    <body>
+
+        <div class="topnav">
+
+            <h3 style="font-family: inherit; font-weight: 100; color: inherit; ">
+
+                <a href="./index.html">Home</a>
+
+                <a href="./bio.html">Bio</a>
+
+                <a href="./musical_works.html">(Musical) Works</a>
+
+                <a href="./things_i_like.html">Things I Like</a>
+
+                <a href="./art.html">Art</a>
+
+                <a href="./max_pd.html">Max/Pd/Py</a>
+
+                <a href="./contact.html">Contact</a>
+            
+            </h3>
+            
+        </div>
+
+
+        <header><!-- here comes the title of the page--><h1></h1></header>
+        
+        <main>
+            
+            <article>
+
+                
+                <h2 style="font-family: inherit; font-weight: inherit; color: inherit;">(Musical) Works:</h2>
+
+
+                <section> <!-- White Heat II-->
+                
+                    <p>
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">White Heat II (For Mezzo-Soprano and Electronics)</h3> 
+                    </p>
+                    
+                    <ul>
+                         <li>
+                            <a href="./scores/white_heat_II" download> 
+                                <h3 style="font-family: inherit; font-weight: 100; color: black; ">
+                                    <strong>Score</strong>
+                                </h3> 
+                            </a>
+                         </li>
+                    
+
+                    <li>
+                        <h3 style="font-family: inherit; font-weight: 100; color: black; ">
+                            <strong>Info:</strong>
+                        </h3>
+                        
+                        <p>
+                            <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                            "White Heat II" was written for Helena Sorokina and performed in Leechkirche in Graz as part of SONify! Festival on 6th of May, 2023. It was inspired by Hildegard von Bingen's cyclical mellismas and transcendental drones. The electronics features me on guitar, Andreas Bäuml on violin and Matthias Brandt and me on percussion. A video of the premiere is on the way! 
+                            </h5>
+                        </p>
+                    
+                    </li>                    
+
+                </section><br>
+
+                <section> <!-- Sibelius-->
+                
+                    <p>
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Sibelius Piss Party, or Decadence In The Internet Age</h3> 
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <h3 style="font-family: inherit; font-weight: 100; color: black; ">
+                                <strong>Info:</strong>
+                            </h3>
+                            
+                            <p>
+                                <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                                "Sibelius Piss Party" is a piece I composed for "Next Generation" Festival which found place in Karlsruhe at ZKM. It is a fixed media piece consistinf of various samples, analog synth feedback and random general midi Sibelius scores blasted through distortion pedals. It was premiered in June 2022. 
+                                </h5>
+                            </p>
+                        
+                        </li>
+
+                    </ul>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KhAY-fOJGyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </section><br>
+
+                
+                <section> <!-- White Heat I-->
+
+                    <p>
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">White Heat (For SSATBB Choir and Electronics)</h3> 
+                    </p>
+                    
+                    <ul>
+                         <li>
+                            <a href="./scores/white_heat" download> 
+                                <h3 style="font-family: inherit; font-weight: 100; color: black; ">
+                                    <strong>Score</strong>
+                                </h3> 
+                            </a>
+                         </li>
+                    
+
+                    <li>
+                        <h3 style="font-family: inherit; font-weight: 100; color: black; ">
+                            <strong>Info:</strong>
+                        </h3>
+                        
+                        <p>
+                            <h5 style="font-family: inherit; font-weight: 100; color: black; ">
+                            "White Heat" was composed for Crossroads Festival in Salzburg, Austria. It was written for Cantando Admont, who premiered it in December, 2022.
+                            </h5>
+                        </p>
+                    
+                    </li>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L78QsB83ImY?start=6301" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </section><br> 
+
+                
+                <section> <!-- Leo Fender -->
+
+                
+                    <p>
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Improv #6 (Leo Fender Dreams Of A Purple Seagull)</h3> 
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m1ZZLLVBA98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </section><br>
+
+                <section> <!-- Weekly Improv-->
+
+                
+                    <p>
+                        <h3 style="font-family: inherit; font-weight: inherit; color: inherit;">Weekly Improvisation (w/Pure Data and Max/MSP/Jitter Live Visuals) 18.12.2022)</h3> 
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Mb0kgsusXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </section><br>
+        
+            </article>
+        
+            
+            
+
+        </main>
+        
+        <footer>
+            
+
+
+        </footer>
+
+    
+
+
+
+    </body>
+
+
+</html>        
